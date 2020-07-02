@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .container-fluid {
@@ -13,7 +16,7 @@ body {
 }
 
 .form {
-    width: 400px;
+    width: 295px;
     height: 250px;
     margin: auto;
     padding: 5px;
@@ -35,7 +38,7 @@ body {
     border: none;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgba(170, 220, 240, 0.89);
+    background-color: #aadcf0e3;
 }
 
 input[type = button] {
@@ -49,11 +52,12 @@ input[type = button] {
     border: none;
     border-radius: 12px;
     margin: 5px 1px;
-    background-color: rgba(50, 195, 255, 0.651);
+    background-color: #32c3ffa6;
+    transition: all 1s;
 }
 
 input[type = button]:hover {
-    background-color: rgba(238, 238, 238, 0.747);
+    background-color: #eeeeeebe;
 }
 
 
@@ -63,10 +67,67 @@ input[type = button]:focus,
     border: none;
 }
 
-.bigSize {
+input[class=red]   {
+    background-color: #ff000099;
+    color: #ddd;
+}
+input[class=red]:hover   {
+    background-color: #ff0000;
+    color: #ddd;
+}
+
+input[class=brown]   {
+    background-color: #eb7171;
+    color: #ddd;
+}
+input[class=brown]:hover   {
+    background-color: #f02020;
+    color: #ddd;
+}
+
+input[class=yellow]   {
+    background-color: #dcff78;
+    color: #222;
+}
+input[class=yellow]:hover   {
+    background-color: #ffff00;
+    color: #222;
+}
+
+input[class=grey]   {
+    background-color: #eeeeee80;
+    color: #222;
     min-width: 50px;
     text-align: center;
 }
+input[class=grey]:hover   {
+    background-color: #eeeeeebe;
+    color: #222;
+}
+
+input[class=pink]   {
+    color: #f02020;
+}
+input[class=pink]:hover   {
+    color: pink;
+}
+
+input[type = button]:focus,
+.screen:focus {
+    outline: none;
+    border: none;
+}
+ 
+input[class=span-two] {
+    grid-column: span 2;
+    background-color: #00ff37;
+}
+input[class=span-two]:hover {
+    grid-column: span 2;
+    background-color: #00ff3780;
+    color: #ddd;
+}
+
 
 
 
